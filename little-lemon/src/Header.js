@@ -1,8 +1,8 @@
-
+import logo from './Logo.svg';
  function Header() {
     return(
       <header className="App-navigation">
-        
+       <img src={logo} className="App-logo" alt="logo" />
       <nav>
       <ul>
         <li><a href="/home">Homepage</a></li>

@@ -1,32 +1,36 @@
-.App {
-  /*text-align: center;*/
-  display:grid;
+* {
+  box-sizing: border-box;
 }
+
+.App {
+  display:grid; 
+  opacity: 1;
+  transition: all 0.9s ease;
+  @starting-style{
+    opacity: 0;
+    traslate: 0 -90px;
+  }
+}
+
+
 
 .App-logo {
-  height: 7vmin;
-  /*pointer-events: none;*/
+    margin: auto 5px;
+    float:left;
+    width: 160px;
+    height: 38px;
+
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}*/
+
 
 .App-navigation {
-  background-color: #f7f8fa;
-  min-height: 6vh;
-  display:grid;
-  justify-content: space-evenly;
-  font-size: ca lc(10px + 1vmin);
-  color: rgb(112, 86, 86);
-
-}
-
-.App-container{
-  display: grid;
-
+  background-color: #EDEFEE;
+  min-height: 3vh;
+  font-size: ca lc(10px + 17vmin);
+  color: rgb(80, 59, 59);
+  text-indent: 45%;
+  height:fit-content
 }
 
  nav li {
@@ -34,22 +38,70 @@
   margin: 20px;
   padding: 11px;
   display: inline;
-
 }
 
 li a{
   text-decoration:none;
   color:black
 }
-.App-link {
-  color: #61dafb;
+
+article{
+ min-height: 350px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Greeting-card{
+  h1{
+    margin: 30px 500px;
   }
-  to {
-    transform: rotate(360deg);
+  h4{
+    margin: -20px 500px;
   }
+  p{
+    margin: 50px 500px;
+  }
+
+}
+ .Chefs{
+   border-radius: 16%;
+   margin-right: 500px;
+   margin: 30px 400px;
+   float: right;
+   height:320px;
+   width:400px;
+   opacity: 1;
+  transition: all 0.9s ease;
+  @starting-style{
+    opacity: 0;
+    traslate: 0 -90px;
+  }
+ }
+
+.Specials-menu{
+  h2{
+   margin: 30px 500px ;
+  }
+
+}
+
+.Testimonials{
+ h2{
+  text-align: center;
+ }
+
+}
+
+.About-section{
+ 
+
+}
+
+.App-footer{
+  height: 200px;
+
+    
+}
+
+@media only screen and(min-width: 350px) {
+
 }
