@@ -1,9 +1,11 @@
+
 * {
   box-sizing: border-box;
 }
 
 .App {
-  display:grid; 
+  display:grid;
+  background-position: center;
   opacity: 1;
   transition: all 0.9s ease;
   @starting-style{
@@ -12,8 +14,6 @@
   }
 }
 
-
-
 .App-logo {
     margin: auto 5px;
     float:left;
@@ -21,8 +21,6 @@
     height: 38px;
 
 }
-
-
 
 .App-navigation {
   background-color: #EDEFEE;
@@ -45,42 +43,88 @@ li a{
   color:black
 }
 
-article{
- min-height: 350px;
-
-}
-
 .Greeting-card{
+  margin: 200px 50px;
   h1{
+    font-size: 30pt;
+    font-family: "Markazi Text", serif;
     margin: 30px 500px;
   }
   h4{
     margin: -20px 500px;
   }
   p{
+    font-family: "Karla", sans-serif;
     margin: 50px 500px;
   }
 
-}
- .Chefs{
-   border-radius: 16%;
-   margin-right: 500px;
-   margin: 30px 400px;
-   float: right;
-   height:320px;
-   width:400px;
-   opacity: 1;
-  transition: all 0.9s ease;
-  @starting-style{
-    opacity: 0;
-    traslate: 0 -90px;
+  .Chefs{
+    border-radius: 16%;
+    margin: -135px 300px;
+    float: right;
+    height:430px;
+    width:500px;
+    opacity: 1;
+   transition: all 0.9s ease;
+   @starting-style{
+     opacity: 0;
+     traslate: 0 -90px;
+   }
   }
- }
+}
 
 .Specials-menu{
-  h2{
-   margin: 30px 500px ;
+
+  display:inline-flex;
+  flex-direction:row;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 130px;
+
+
+ .Highlight1{
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  margin:left;
+  margin-top: 50px;
+
+ }
+
+.Highlight2{
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 50px
+}
+
+.Highlight3{
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 50px;
+  img{
+    height: 206px;
   }
+}
+h2{
+  margin-top: -50px;
+  margin-left: 350px;
+  margin-right: -215px;
+ }
+ h3{
+  margin: 20px;
+ }
+h4{
+  color: #DAAA0C;
+  margin-top: -43.0px;
+  margin-left: 220px;
+}
+ article img{
+  width: 310px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+ }
+
 
 }
 
@@ -89,17 +133,29 @@ article{
   text-align: center;
  }
 
+ .flex-container {
+  display: flex;
+}
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+}
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
 }
 
 .About-section{
- 
+ h3,h4{
+  text-align: center;
+ }
 
 }
 
 .App-footer{
-  height: 200px;
+  background-color: #495E57
 
-    
 }
 
 @media only screen and(min-width: 350px) {
