@@ -27,9 +27,14 @@
   min-height: 3vh;
   font-size: ca lc(10px + 17vmin);
   color: rgb(80, 59, 59);
-  text-indent: 45%;
+  text-indent: 43%;
   height:fit-content
 }
+
+nav ul :hover{  
+  background: #b9b9b9ea;
+  transition: 0.5s;
+ }
 
  nav li {
   list-style: none;
@@ -142,7 +147,7 @@ h4{
 }
 .flex-child:first-child {
   margin-right: 20px;
-} 
+}
 
 }
 
