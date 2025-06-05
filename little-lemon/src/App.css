@@ -28,7 +28,9 @@
   font-size: ca lc(10px + 17vmin);
   color: rgb(80, 59, 59);
   text-indent: 43%;
+  position: sticky;
   height:fit-content
+
 }
 
 nav ul :hover{  
@@ -47,6 +49,7 @@ li a{
   text-decoration:none;
   color:black
 }
+
 
 .Greeting-card{
   margin: 200px 50px;
@@ -160,7 +163,7 @@ h4{
 
 .App-footer{
   background-color: #495E57
-
+  
 }
 
 @media only screen and(min-width: 350px) {
