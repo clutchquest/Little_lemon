@@ -9,9 +9,6 @@ html {
 .App {
   display:grid;
   position:absolute;
-  /*background-image: url("images/raw-garganelli-pasta-with-halved-tomatoes-basil-corner-black-textured-backdrop.jpg");*/
-  background-repeat:no-repeat;
-  background-position: center;
 
   opacity: 1;
   transition: all 0.9s ease;
@@ -43,7 +40,7 @@ html {
   top: 0;
   width: 100%;
   min-height: 6vh;
-  /*box-shadow: 29px 7px 5px;*/
+  box-shadow: 29px 7px 5px;
   color: rgb(80, 59, 59);
   text-indent: 430px
 
@@ -101,9 +98,9 @@ nav a:hover{
 }
 
 .Greeting-content{
- 
+ width: fit-content;
    h1{
-    font-size: 45pt;
+    font-size: 45px;
     font-family: "Markazi Text", serif;
     margin: 10px 500px;
     width:280px;
@@ -129,13 +126,17 @@ nav a:hover{
 .Title{
   background-color: #495E57;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- h1{
-  margin-top: 100;
- }
+  h1,h2{
+    color:bisque;
+    margin-top: 0;
+    margin-bottom:14px;
+  }
 }
 
 
 .Specials-menu{
+ 
+ 
   background-color: #EDEFEE;
  .Highlight1{
   display: flex;
@@ -199,35 +200,65 @@ p{
 }
 
 .Buffer{
-  text-align: center;
-  font-size: 50px;
+
+ text-align: center;
 }
 
-#Menu{
-display: flex;
- 
-h1{
-  text-align: center;
+
+
+.Menu{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
-}
-.Appetizers{
-
- flex:24px;
-row-gap: 30px;
-}
-.Main-Courses{
-
- flex: 20px;
-}
-.Menu-img{
-  
-   width: 430px;
-   height: 300px;
-   border-radius: 16px;
- 
+/* Optional: set max-widths if the columns are too wide */
+.Appetizers, .Main-Courses {
+  flex: 1;
+  min-width: 300px;
+  h1{
+    text-align: center;
   }
+}
 
+
+.item{
+  display: flex;
+  align-items: center;
+  width: 90%; /* two columns; adjust as needed */
+  margin-bottom: 16px;
+}
+
+.Menu-img{
+   width: 264px; /* or whatever size */
+  height: 164px;
+  margin-right: 17px;
+  border-radius: 16px;
+}
+
+.Menu-bottom{
+   display: flex;
+  flex-wrap: wrap;
+  
+  padding: 30px;
+}
+
+.Wine, .Dessert{
+  flex: 1;
+  align-items: left;
+  min-width: 300px;
+}
+
+.wine-img,.dessert-img{
+   width: 264px; /* or whatever size */
+  height: 164px;
+  margin-right: 17px;
+  border-radius: 16px;
+}
+
+.wine-title, .dessert-title{
+text-align: center;
+}
 
 
 .Testimonials{
@@ -279,7 +310,7 @@ row-gap: 30px;
 
 .about-content{
  width: fit-content;
- 
+
 }
 
 .slideshow {

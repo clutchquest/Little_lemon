@@ -3,8 +3,8 @@ import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from './images/Me
 import {Jameslee,Carla,Amanda,Diego,Star} from './images/Testimonials/index.js'
 import Pairoflemon from './images/icons/lemonpic.png'
 import {Slide1, Slide2, Slide3} from './images/collage/index.js'
-
-
+import WineBar from './images/Backgrounds/wine.jpg'
+import Sweet from './images/Backgrounds/lemonTorta.jpg'
 function Main(){
     return(
         <main>
@@ -57,59 +57,74 @@ function Main(){
                    </div>
                 </article>
           </section>
-             <h1 class='Buffer'>Our Menu</h1>
+           <h1 class='Buffer'>Our Menu</h1>
         <section id="Menu" className='Menu'>
+            
            <div class="Appetizers">
                <h1>Appetizers</h1>
-               
-                 <img class='Menu-img' src={Apt1} alt=""></img>
-               
+
                 <div class='item'>
-                    <h2>Greek Salad</h2>
+                  <img class='Menu-img' src={Apt1} alt=""></img>
+                    <h2>Greek Salad</h2> <h2>$12</h2>
                     <p>Crisp romaine hearts, tomatoes, cucumber, red onion, Kalamata olives, feta, lemon-oregano vinaigrette.</p>
                 </div>
-                <img class='Menu-img' src={Apt2} alt=""></img>
+                
                 <div class='item'>
-                     <h2>Bruschetta Classica</h2>
+                  <img class='Menu-img' src={Apt2} alt=""></img>
+                     <h2>Bruschetta Classica</h2> <h2>$13</h2>
                      <p>Grilled ciabatta, heirloom tomatoes, garlic, extra virgin olive oil, fresh basil.</p>
                 </div>
-                 <img class='Menu-img' src={Apt3} alt=""></img>
+                 
                 <div class='item'>
-                    <h2>Fritto Misto</h2>
+                  <img class='Menu-img' src={Apt3} alt=""></img>
+                    <h2>Fritto Misto</h2> <h2>$17</h2>
                     <p>Lightly fried calamari, shrimp, seasonal vegetables, lemon aioli.</p>
                 </div>
            </div>
             <div class="Main-Courses">
               <h1>Main Courses</h1>
-              <img class='Menu-img' src={MainCourse1} alt=""></img>
                    <div class='item'>
-                       <h2>Tagliatelle al Limone e Gamberi</h2>
+                    <img class='Menu-img' src={MainCourse1} alt=""></img>
+                       <h2>Tagliatelle al Limone e Gamberi</h2> <h2>$29</h2>
                        <p>House made tagliatelle, sautéed shrimp, lemon zest cream, fresh spinach, Parmigiano.</p>
                    </div>
-                   <img class='Menu-img' src={MainCourse2} alt=""></img>
+                  
                    <div class='item'>
-                       <h2>Pollo alla Milanese</h2>
+                     <img class='Menu-img' src={MainCourse2} alt=""></img>
+                       <h2>Pollo alla Milanese</h2> <h2>$28</h2>
                        <p>Crispy panko-breaded chicken, arugula, cherry tomatoes, shaved Parmesan, balsamic drizzle. </p>
                    </div>
-                    <img class='Menu-img' src={MainCourse3} alt=""></img>
+                   
                    <div class='item'>
-                       <h2>Short Rib Ravioli</h2>
+                     <img class='Menu-img' src={MainCourse3} alt=""></img>
+                       <h2>Short Rib Ravioli</h2> <h2>$32</h2>
                        <p>Braised short rib-filled ravioli, red wine reduction, wild mushrooms, Grana Padano.</p>
                    </div>
             </div>
 
-             <article className='Wine'>
-              <div class='wine-img'>
+         </section>
 
-              </div>
+            <div className='Menu-bottom'>
+                     <article className='Wine'>
+                <h1 className='wine-title'>Wine Pairings</h1>
+
+                <img class='wine-img' src={WineBar} alt=''></img>
                 <div className='wine-content'>
 
                 </div>
              </article>
+              <article className='Dessert'>
+                <h1 className='dessert-title'>Dessert</h1>
 
 
+                  <img class='dessert-img'src={Sweet} alt=''></img>
 
-         </section>
+                 <div className='dessert-content'>
+
+                 </div>
+              </article>
+            </div>
+ 
 
          <section className="Testimonials">
                   <h1>Testimonials</h1>
