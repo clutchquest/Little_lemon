@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
+import FadeInSection from "./Parts/FadeInSection.jsx";
 import Footer from './Footer.js'
 import './App.css';
 import Popup from 'reactjs-popup';
@@ -49,6 +50,7 @@ function App() {
   };
 
   return (
+    
     <body className="App">
       <Header onBookClick={handleBookClick} />
       <Popup open={isPopupOpen} onClose={closePopup} modal>
@@ -134,11 +136,14 @@ function App() {
 
       <button type="submit">Book Now</button>
     </form>
+    
       </Popup>
+      <FadeInSection/>
           <Main/>
            <Footer/>
     </body>
   );
+
 }
 
 
