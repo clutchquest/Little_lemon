@@ -1,8 +1,9 @@
 import React from 'react';
-import FadeInSection from "./Parts/FadeInSection.jsx";
-import { greeksalad, bruchetta, lemondessert} from './images/index.js'
+import FadeInSection from "./Parts/FadeIn/FadeInSection.jsx";
+import { greeksalad, bruchetta, lemondessert} from './images/index.js' 
 import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from './images/Menuitems/index.js'
 import {Jameslee,Carla,Amanda,Diego,} from './images/Testimonials/index.js'
+import Aboutbackground from './images/icons/Lemondrawing.png'
 import Pairoflemon from './images/icons/lemonpic.png'
 import {Slide1, Slide2, Slide3} from './images/collage/index.js'
 
@@ -11,7 +12,7 @@ function Main(){
     return(
         <main>
          <section className="Greeting-card">
-        
+         
           <img src={Pairoflemon} className="Lemon" alt="Two lemons"></img>
         
          <div className='Greeting-content'>
@@ -26,8 +27,8 @@ function Main(){
          </section>
 
                <div class='Title'>
-                   <h1>Under the Limelight!</h1>
-                 <h2>Check out our daily Specials!</h2>
+                   <h1>Under the Limelight</h1>
+                 <h2>Check out our daily specials!</h2>
             </div>
           <section className="Specials-menu">
           <FadeInSection direction='left'>
@@ -59,8 +60,8 @@ function Main(){
                     <img className='img-dessert' src={lemondessert} alt="some lemon cake"></img>
                    </div>
                    <div className='content'>
-                    <h3>Lemon Dessert</h3> <h4> 
-                      <span class='price'>$5.00</span>
+                    <h3>Torta al Limone</h3> <h4> 
+                      <span class='price'>$10.00</span>
                       </h4>
                  <p>A simple and elegant cake with a moist, tender crumb and a pronounced lemon flavor.</p>
                    </div>
@@ -140,8 +141,8 @@ function Main(){
 
                   <div class='left-content'>
                       <h1>Try our wine pairings!</h1>
-                      <p>Paired with a few of our most favored wines, we also have a complamentory dish to serve your sweet tooth with a sugary lemon delight.</p>
-                      <h2>Torta al Limone</h2>
+                      <p>Paired with a few of our most favored wines, We’re delighted to welcome you every day for lunch and dinner! You can easily make a reservation online or by phone. While we don’t offer takeout or a children’s menu just yet, we can’t wait to share a truly memorable and delicious dining experience with you. Thank you so much for being part of our community — we look forward to seeing you soon!</p>
+                      
                   </div>
 
      <div class='wine-menu'>
@@ -196,13 +197,13 @@ function Main(){
              <div class="flex-child">
             <img class='pic' src={Jameslee} alt=""></img>
               <h2>James Lee</h2>
-              <p>Dining at Little Lemon was a delightful experience from start to finish. The team is warm, attentive, and genuine, making us feel right at home. Every dish was a delicious mix of comforting tradition and imaginative flavors. It’s the perfect place to relax, enjoy great food, and soak in a welcoming atmosphere.</p>
+              <p>"Dining at Little Lemon was a delightful experience from start to finish. The team is warm, attentive, and genuine, making us feel right at home. Every dish was a delicious mix of comforting tradition and imaginative flavors. It’s the perfect place to relax, enjoy great food, and soak in a welcoming atmosphere."</p>
            </div>
             <div class="flex-child">
             <img class='pic' src={Amanda} alt=""></img>
             
                 <h2>Amanda Gomez</h2>
-                <p>From the cozy yet stylish decor to the inventive menu, Little Lemon stands out. We loved the classic Italian flavors presented with modern flair, and the Torta al Limone was a highlight. The staff were attentive without being intrusive, always ready with helpful recommendations. I can’t wait to return and bring friends to share the experience.</p>
+                <p>"From the cozy yet stylish decor to the inventive menu, Little Lemon stands out. We loved the classic Italian flavors presented with modern flair, and the Torta al Limone was a highlight. The staff were attentive without being intrusive, always ready with helpful recommendations. I can’t wait to return and bring friends to share the experience."</p>
              </div>
           </div>
           
@@ -211,19 +212,22 @@ function Main(){
              <img class='pic' src={Carla} alt=""></img>
              
                   <h2>Carla Winthrope</h2>
-                  <p>We waited over 40 minutes for our table despite having a reservation, which was frustrating. The restaurant was extremely noisy, making it hard to have a conversation. We brought kids along and were disappointed there was no kids’ menu or family-friendly options. While the food was decent, the atmosphere and wait times mean we likely won’t be back</p>
+                  <p>"We waited over 40 minutes for our table despite having a reservation, which was frustrating. The restaurant was extremely noisy, making it hard to have a conversation. We brought kids along and were disappointed there was no kids’ menu or family-friendly options. While the food was decent, the atmosphere and wait times mean we likely won’t be back"</p>
              </div>
              <div class="flex-child">
              <img class='pic' src={Diego} alt=""></img>
             
                    <h2>Diego Wallace</h2>
-                   <p>Little Lemon delivers amazing Italian cuisine with a creative modern twist. Every dish we tried was fresh and flavorful, beautifully balancing tradition and innovation. The staff was exceptionally friendly and made us feel truly welcome. With its sleek yet inviting vibe, it’s easily one of my favorite dining spots in Chicago.</p>
+                   <p>"Little Lemon delivers amazing Italian cuisine with a creative modern twist. Every dish we tried was fresh and flavorful, beautifully balancing tradition and innovation. The staff was exceptionally friendly and made us feel truly welcome. With its sleek yet inviting vibe, it’s easily one of my favorite dining spots in Chicago."</p>
              </div>
              </div>
             
         </div>
          </section>
             <section id="About-section" class='about'>
+               
+                 <img src= {Aboutbackground} class='L-about-background' alt='a lemon drawing'></img>
+              
               <div class='about-content'>
                   <h1>About us</h1>
                    <p>Mario and Adrian were two freinds who wanted to share their love for italian cuisine to not only the Greater lakes reigon, but to the whole USA! So in 2012. the pair set out from their home town of Naples and flew to the Windy city. Over the years Mario and Adrian have been perfecting their dishes and their dining experience aswell! More locations Coming soon!</p>
