@@ -1,20 +1,19 @@
 import React from 'react';
-import FadeInSection from "./Parts/FadeIn/FadeInSection.jsx";
-import { greeksalad, bruchetta, lemondessert} from './images/index.js' 
-import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from './images/Menuitems/index.js'
-import {Jameslee,Carla,Amanda,Diego,} from './images/Testimonials/index.js'
-import Aboutbackground from './images/icons/Lemondrawing.png'
-import Pairoflemon from './images/icons/lemonpic.png'
-import {Slide1, Slide2, Slide3} from './images/collage/index.js'
+import FadeInSection from "./FadeIn/FadeInSection.jsx";
+import { greeksalad, bruchetta, lemondessert} from "./images/Specials/SpecialsExport.js";
+import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from "./MenuExport.js";
+import {Jameslee,Carla,Amanda,Diego,} from '/TestimonialExport.js';
+import {Aboutbackground,Pairoflemon} from 'iconExport.js';
+import {Slide1, Slide2, Slide3} from 'SlideExport.js';
 
 
 function Main(){
     return(
         <main>
          <section className="Greeting-card">
-         
+
           <img src={Pairoflemon} className="Lemon" alt="Two lemons"></img>
-        
+
          <div className='Greeting-content'>
               <h1>Little Lemon</h1>
             <h4>Chicago</h4>

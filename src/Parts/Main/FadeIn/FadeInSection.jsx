@@ -22,5 +22,5 @@ const FadeInSection = ({ children, direction = 'left' }) => {
     </div>
   );
 };
-
+ 
 export default FadeInSection;
