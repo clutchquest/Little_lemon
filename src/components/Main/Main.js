@@ -1,10 +1,11 @@
 import React from 'react';
+import './Main.css';
 import FadeInSection from "./FadeIn/FadeInSection.jsx";
-import { greeksalad, bruchetta, lemondessert} from "./images/Specials/SpecialsExport.js";
-import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from "./MenuExport.js";
-import {Jameslee,Carla,Amanda,Diego,} from '/TestimonialExport.js';
-import {Aboutbackground,Pairoflemon} from 'iconExport.js';
-import {Slide1, Slide2, Slide3} from 'SlideExport.js';
+import { greeksalad, bruchetta, lemondessert} from "assets/Specials/SpecialsExport.js";
+import {Apt1, Apt2, Apt3,MainCourse1,MainCourse2,MainCourse3 } from "assets/Menu-items/MenuExport.js";
+import {Jameslee,Carla,Amanda,Diego,} from "assets/Testimonials/TestimonialExport.js";
+import {Aboutbackground,Pairoflemon} from 'assets/icons/iconExport.js';
+import {Slide1, Slide2, Slide3} from 'assets/collage/SlideExport.js';
 
 
 function Main(){

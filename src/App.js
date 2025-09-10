@@ -1,8 +1,8 @@
 import React,{ useState } from 'react';
-import Header from './Parts/Header/Header.js';
-import Main from './Parts/Main/Main.js';
-import FadeInSection from './Parts/Main/FadeIn/FadeInSection.jsx';
-import Footer from './Parts/Footer/Footer.js'
+import Header from './components/Header/Header.js';
+import Main from './components/Main/Main.js';
+import FadeInSection from './components/Main/FadeIn/FadeInSection.jsx';
+import Footer from './components/Footer/Footer.js'
 import './App.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css'

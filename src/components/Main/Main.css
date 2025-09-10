@@ -2,7 +2,7 @@
 .Greeting-card{
 
  height:450px ;
- background-image: url('images/Backgrounds/Chicago4.jpg');
+ background-image: url('assets/Backgrounds/Chicago4.jpg');
  background-repeat: no-repeat;
  background-size:cover;
  background-position: center;
@@ -200,7 +200,7 @@ position: relative;
   flex-wrap: wrap;
   background-image:
   linear-gradient(rgba(139, 0, 0, 0.5), rgba(122, 75, 4, 0.5)),
-  url('images/Backgrounds/wine.jpg');
+  url('assets/Backgrounds/wine.jpg');
   background-size: cover;
   background-position: top;
   min-height: 400px;
@@ -275,7 +275,12 @@ position: relative;
 
 
 .Testimonials{
- 
+  padding-left: 100px;
+  padding-right:100px;
+ h1{
+  text-align: center;
+  
+ }
  h2{
   text-align: center;
   width: fit-content;

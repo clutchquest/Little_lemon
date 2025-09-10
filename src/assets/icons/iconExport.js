@@ -1,2 +1,2 @@
-export {default as Pairoflemon} from './icons/lemonpic.png';
-export {default as Aboutbackground} from './icons/Lemondrawing.png';
+export {default as Pairoflemon} from './lemonpic.png';
+export {default as Aboutbackground} from './Lemondrawing.png';
