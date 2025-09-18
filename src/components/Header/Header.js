@@ -1,19 +1,20 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from './Logo.svg';
 import'./Header.css'
 
-function Header({ onBookClick }) {
+function Header() {
   return (
     <header className="App-navigation">
       <img src={logo} className="App-logo" alt="logo" />
       <nav>
         <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="#About-section">About</a></li>
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#Reservation" onClick={e => {e.preventDefault(); onBookClick();}}>Reservations</a></li>
-          <li><a href="/order online">Order Online</a></li>
-          <li><a href="/login">Login</a></li>
+          <li><NavLink to="/home">Home</NavLink></li>
+          <li><NavLink to="#About-section">About</NavLink></li>
+          <li><NavLink to="#Menu">Menu</NavLink></li>
+          <li><NavLink to="/Booking">Reservations</NavLink></li>
+          <li><NavLink to="/order online">Order Online</NavLink></li>
+          <li><NavLink to="/login">Login</NavLink></li>
         </ul>
       </nav>
     </header>
