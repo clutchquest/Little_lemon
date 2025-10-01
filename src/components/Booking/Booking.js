@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './Booking.css' 
+
 function Booking(){
   const [formData, setFormData] = useState({
     date: "",
@@ -36,9 +37,16 @@ function Booking(){
     alert("Reservation submitted!");
   };
     return(
-      <body classname='Bookingbody'>
-         <form  className='form' onSubmit={handleSubmit} style={{ maxWidth: 700, margin: "5rem auto" }}>
-          <h2>Book a Table</h2>
+      <body>
+       <div id='background' class='section'>
+       
+         <div class='section-center'>
+          
+            <div class='container'>
+                    <div class='row'>
+                       <h2>Book a Table</h2>
+                       <div class='booking form'>
+                         <form  className='form' onSubmit={handleSubmit} style={{ maxWidth: 300,   }}>
           
       <label className='input-sec'>
         Date:
@@ -117,7 +125,15 @@ function Booking(){
             <button type="submit" className='submit-btn'>Book Now</button>
           </div>
          </form>
-    </body>
+
+                       </div>
+                    </div>
+            </div>
+         </div>
+
+       </div>
+       
+     </body>
 
     );
 }
